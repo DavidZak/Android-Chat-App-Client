@@ -49,7 +49,7 @@ public class RetrofitApplication extends Application {
 
     private static SharedPreferences welcomeSharedPreferences;
 
-    //private UserDB userdb;
+    private static final String BASE_URL = "https://192.168.10.1:8000/";
 
     @Override
     public void onCreate() {
@@ -67,7 +67,7 @@ public class RetrofitApplication extends Application {
         okHttp.addInterceptor(logging);
 
         builder = new Retrofit.Builder()
-                .baseUrl("https://192.168.10.1:8000/")
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(okHttp.build());
 

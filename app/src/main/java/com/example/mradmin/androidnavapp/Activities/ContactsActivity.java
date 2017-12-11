@@ -99,9 +99,6 @@ public class ContactsActivity extends AppCompatActivity {
             }
         });
 
-        for (int i=0;i<100;i++) {
-            contactList.add(new Profile("davo", "davon", "mihalich", "2017-05-13T13:30:13.333Z", new Avatar("", "")));
-        }
         recyclerView = (RecyclerView) findViewById(R.id.contactsListView);
 
         ContactAdapter contactAdapter = new ContactAdapter(contactList);
@@ -195,15 +192,6 @@ public class ContactsActivity extends AppCompatActivity {
 
                     List<Profile> users = response.body();
 
-
-                    //sort by firstName --------
-                    //users.sort(new Comparator<Profile>() {
-                    //    @Override
-                    //    public int compare(Profile userEntity, Profile t1) {
-                    //        return userEntity.getFirstName().compareTo(t1.getFirstName());
-                    //    }
-                    //});
-                    // -------------------------
                     contactList = users;
 
                     Collections.sort(contactList);
