@@ -1,6 +1,6 @@
 ## Messenger App
 
-### Messenger app client for android with personal and group chats. Connection wwith server API by Retrofit
+### Messenger app client for android with personal and group chats using Retrofit
 
 ### Used:
 - Android Studio 3.0
