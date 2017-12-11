@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/imageViewMessageSender"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/img_placeholder_avatar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBossClickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imageViewMessageSender">
+
+        <LinearLayout
+            android:id="@+id/messageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="64dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:background="@drawable/message_bubble_rect_left"
+            android:backgroundTint="?android:colorForegroundInverse"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:textColorPrimary"
+                tools:text="Message"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/messageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:11"
+                android:textSize="10sp"
+                android:textColor="?android:textColorTertiary"
+                android:layout_gravity="bottom|right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

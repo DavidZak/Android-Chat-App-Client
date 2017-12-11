@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_contact_toolbar">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add contact"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/white"
+            android:layout_gravity="left|center"/>
+
+        <ImageButton
+            android:id="@+id/buttonAddContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_okey"
+            android:tint="@color/white"
+            android:layout_gravity="right|center"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"/>
+
+
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>

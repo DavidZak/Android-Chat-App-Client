@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mradmin.androidnavapp.Activities.GroupChatProfileActivity">
+
+    <item
+        android:id="@+id/action_change_chat_name"
+        android:orderInCategory="100"
+        android:title="Change name"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_add_member"
+        android:orderInCategory="100"
+        android:title="Add member"
+        app:showAsAction="never" />
+
+</menu>

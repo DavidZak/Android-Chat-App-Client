@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center"
+    android:id="@+id/search_chat_toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputSearchChats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:singleLine="true"
+            android:layout_marginRight="8dp"
+            android:textColorHint="?android:textColorPrimaryInverseDisableOnly"
+            android:backgroundTint="?android:colorPrimary"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/closeSearchChats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:tint="@color/white"
+            android:rotation="90"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

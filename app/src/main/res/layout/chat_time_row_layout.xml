@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="4dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_chat_time_layout"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textViewChatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxWidth="256dp"
+            android:text="11 november 2011"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

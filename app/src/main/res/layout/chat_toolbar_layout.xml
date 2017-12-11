@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_toolbar" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/chatToolbarLayoutBoss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginRight="56dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageViewUserImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/img_placeholder_avatar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="8dp">
+
+                <TextView
+                    android:id="@+id/imageViewUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:layout_gravity="left|center"/>
+
+                <TextView
+                    android:id="@+id/imageViewUserStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:singleLine="true"
+                    android:layout_gravity="left|center"
+                    android:textColor="?android:textColorPrimaryInverseDisableOnly"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>

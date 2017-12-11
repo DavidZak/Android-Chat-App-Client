@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layoutImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_circle"
+            android:layout_gravity="left|center"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewDialogueImage"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/img_placeholder_avatar"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_back_circle"
+            android:layout_toEndOf="@+id/layoutImage"
+            android:layout_alignBottom="@+id/layoutImage"
+            android:layout_marginLeft="-24dp"
+            android:layout_marginBottom="-8dp">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@id/layoutImage"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewChatType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_group"
+                android:tint="?android:colorAccent"
+                android:layout_marginRight="4dp"/>
+
+            <TextView
+                android:id="@+id/textViewDialogueName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layoutImage"
+                android:text="Name"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/textViewMessageTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewDialogueName"
+                android:layout_alignParentRight="true"
+                android:text="never"
+                android:gravity="right"
+                android:singleLine="true"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/layoutImage"
+            android:layout_toEndOf="@+id/layoutImage"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="32dp" >
+
+            <TextView
+                android:id="@+id/textViewMessageSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender: "
+                android:singleLine="true"
+                android:textColor="?android:colorAccent" />
+
+            <TextView
+                android:id="@+id/textViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last message text"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/unreadCountContainerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayoutTextContainer"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_accent_circle"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginBottom="-2dp">
+
+            <TextView
+                android:id="@+id/textViewUnreadMessageCount"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:text="99+"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="72dp"
+        android:background="?android:textColorTertiary"
+        android:layout_marginLeft="72dp" />
+
+</RelativeLayout>
